@@ -1,0 +1,50 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.site-title {
+    background-color:#c7c4c4;
+    margin: 0 0 0 0;
+    padding: 10px 0 10px 10px;
+    font-weight: lighter;
+}
+
+li.navitem {
+    display: inline-flex;
+    flex-direction: row;
+    margin: 0 10px 0 10px;
+}
+
+.navbar li a {
+    font-size: 16pt;
+}
+
+ul.navlist {
+    padding-left: 10px;
+}
+
+li.navlink-active {
+    border-bottom: 1px solid rgb(77, 77, 77);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.intro {
+    flex-basis: 100%;
+    text-align: justify;
+    margin: 0 30% 0 30%;
+}
+
+.intro h1 {
+    text-align: center;
+}
