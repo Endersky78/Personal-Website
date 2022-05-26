@@ -1,15 +1,41 @@
+
+:root {
+    --main-bg-color: #929499;
+    --navbar-bg-color: #BEC3CF;
+    --div-bg-color: #BEC3CF;
+    --text-color: #003C66;
+
+    --other-color: #231651;
+    --other-color-light: #E6EFEF;
+}
+
 body {
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--navbar-bg-color);
+}
+
+main {
+    display: flex;
+    background-color: var(--div-bg-color);
+    width: 70%;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 15%;
+    border-radius: 15px;
 }
 
 a {
-    color: black;
+    color: var(--text-color);
     text-decoration: none;
 }
 
 .site-title {
-    background-color:#c7c4c4;
     margin: 0 0 0 0;
     padding: 10px 0 10px 10px;
     font-weight: lighter;
@@ -33,12 +59,6 @@ li.navlink-active {
     border-bottom: 1px solid rgb(77, 77, 77);
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
 .intro {
     flex-basis: 100%;
     text-align: justify;
@@ -47,4 +67,26 @@ main {
 
 .intro h1 {
     text-align: center;
+}
+
+.skill-lists {
+    display: flex;
+    flex-basis: 100%;
+    margin-top: 1%;
+    padding: 0 30%;
+    width: 70%;
+}
+
+.skill-lists section {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.skill-lists .skills {
+    margin-left: 15%;
+}
+
+.skill-lists .proficiencies {
+    margin-right: 18%;
 }
