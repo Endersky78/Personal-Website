@@ -1,7 +1,6 @@
 {
   "dependencies": {
-    "express": "^4.18.1",
-    "nodemon": "^2.0.16"
+    "express": "^4.18.1"
   },
   "scripts": {
     "start": "node server.js",
@@ -11,7 +10,6 @@
   "description": "This is the source code for my presonal website. I'm currently in the process of taking a web development class, so I will spend time on it here and there when I want to try something new I've learned, however as a student in college, making any headway will be difficult. My current plan is to have this website fully finished and posted  by the end of this summer.",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Endersky78/Personal-Website.git"

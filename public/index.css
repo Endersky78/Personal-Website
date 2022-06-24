@@ -27,6 +27,7 @@ main {
     flex-wrap: wrap;
     align-items: center;
     margin-left: 15%;
+    margin-top: 1%;
     border-radius: 15px;
 }
 
@@ -65,7 +66,7 @@ li.navlink-active {
     margin: 0 30% 0 30%;
 }
 
-.intro h1 {
+.section-heading {
     text-align: center;
 }
 
@@ -73,20 +74,57 @@ li.navlink-active {
     display: flex;
     flex-basis: 100%;
     margin-top: 1%;
-    padding: 0 30%;
+    justify-content: center;
     width: 70%;
 }
 
 .skill-lists section {
     display: flex;
     flex-direction: column;
-    width: 40%;
 }
 
 .skill-lists .skills {
-    margin-left: 15%;
+    margin-left: 1%;
 }
 
 .skill-lists .proficiencies {
-    margin-right: 18%;
+    margin-right: 1%;
+}
+
+#projects-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+}
+
+.project-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1%;
+    width: 40%;
+}
+
+#biography {
+    padding: 0 1%;
+}
+
+footer {
+    display: flex;
+    position: absolute;
+    background-color: var(--navbar-bg-color);
+    width: 100%;
+    height: 7%;
+    margin-top: 2%;
+    padding-left: 1%;
+    align-items: center;
 }
