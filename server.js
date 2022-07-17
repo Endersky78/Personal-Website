@@ -17,6 +17,10 @@ app.get('/experience', (req, res) => {
   res.status(200).render('experience')
 })
 
+app.get('/resume', (req, res) => {
+  res.status(200).render('resume')
+})
+
 app.use(express.static('public'))
 
 app.get('*', function (req, res) {
