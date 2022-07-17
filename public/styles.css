@@ -118,6 +118,27 @@ li.navlink-active {
     padding: 0 1%;
 }
 
+#exp-div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.exp {
+    flex-basis: 43%;
+    margin-left: 2%;
+    padding: 1%;
+}
+
+.exp h1 {
+    font-size: 18pt;
+}
+
+.exp h2 {
+    font-size: 12pt;
+}
+
 footer {
     display: flex;
     position: absolute;
