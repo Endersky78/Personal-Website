@@ -13,6 +13,10 @@ app.get('/', (req, res) => {
   res.status(200).render('index')
 })
 
+app.get('/projects', (req, res) => {
+  res.status(200).render('projects')
+})
+
 app.get('/experience', (req, res) => {
   res.status(200).render('experience')
 })

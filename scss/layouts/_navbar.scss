@@ -1,0 +1,27 @@
+header {
+    background-color: $primary-bg-color;
+
+    h1 {
+        margin: 0 0 0 0;
+        padding: 10px 0 10px 10px;
+        font-weight: lighter;
+    }
+
+    ul {
+        padding-left: 10px;
+    }
+
+    li {
+        display: inline-flex;
+        flex-direction: row;
+        margin: 0 10px 0 10px;
+
+        a {
+            font-size: 16pt;
+        }
+    }
+
+    li.navlink-active {
+        border-bottom: 1px solid rgb(77, 77, 77);
+    }
+}

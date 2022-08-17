@@ -1,0 +1,23 @@
+#exp-div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.exp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 43%;
+    margin-left: 2%;
+    padding: 1%;
+
+    h1 {
+        font-size: 18pt;
+    }
+    
+    h2 {
+        font-size: 12pt;
+    }
+}

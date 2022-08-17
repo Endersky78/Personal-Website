@@ -1,0 +1,209 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+}
+
+div {
+  display: flex;
+}
+
+main {
+  display: flex;
+  background-color: var(--div-bg-color);
+  width: 70%;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 15%;
+  margin-top: 1%;
+  border-radius: 15px;
+}
+
+.section-heading {
+  text-align: center;
+}
+
+section {
+  display: flex;
+}
+
+footer {
+  display: flex;
+  position: absolute;
+  background-color: var(--navbar-bg-color);
+  width: 100%;
+  height: 7%;
+  margin-top: 2%;
+  padding-left: 1%;
+  align-items: center;
+}
+
+header {
+  background-color: #929499;
+}
+header h1 {
+  margin: 0 0 0 0;
+  padding: 10px 0 10px 10px;
+  font-weight: lighter;
+}
+header ul {
+  padding-left: 10px;
+}
+header li {
+  display: inline-flex;
+  flex-direction: row;
+  margin: 0 10px 0 10px;
+}
+header li a {
+  font-size: 16pt;
+}
+header li.navlink-active {
+  border-bottom: 1px solid rgb(77, 77, 77);
+}
+
+#exp-div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.exp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: 43%;
+  margin-left: 2%;
+  padding: 1%;
+}
+.exp h1 {
+  font-size: 18pt;
+}
+.exp h2 {
+  font-size: 12pt;
+}
+
+.intro {
+  flex-basis: 100%;
+  text-align: justify;
+  margin: 0 30% 0 30%;
+}
+
+.skill-lists {
+  display: flex;
+  flex-basis: 100%;
+  margin-top: 1%;
+  justify-content: center;
+  width: 70%;
+}
+.skill-lists section {
+  flex-direction: column;
+}
+.skill-lists .skills {
+  margin-left: 1%;
+}
+.skill-lists .proficiencies {
+  margin-right: 1%;
+}
+
+#biography {
+  padding: 0 1%;
+}
+
+#projects-main {
+  flex-direction: column;
+}
+
+.projects-div {
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section {
+  display: flex;
+  justify-content: center;
+}
+
+.project-section {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1%;
+  width: 40%;
+}
+
+.resume-div {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  margin: auto;
+}
+
+iframe {
+  position: relative;
+  width: 100%;
+  height: 1100px;
+  border: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

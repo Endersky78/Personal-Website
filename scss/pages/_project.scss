@@ -1,0 +1,20 @@
+#projects-main {
+    flex-direction: column;
+}
+
+.projects-div {
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+}
+
+.project-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1%;
+    width: 40%;
+}

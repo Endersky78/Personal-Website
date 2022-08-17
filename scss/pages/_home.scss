@@ -1,0 +1,29 @@
+.intro {
+    flex-basis: 100%;
+    text-align: justify;
+    margin: 0 30% 0 30%;
+}
+
+.skill-lists {
+    display: flex;
+    flex-basis: 100%;
+    margin-top: 1%;
+    justify-content: center;
+    width: 70%;
+
+    section {
+        flex-direction: column;
+    }
+
+    .skills {
+        margin-left: 1%;
+    }
+
+    .proficiencies {
+        margin-right: 1%;
+    }
+}
+
+#biography {
+    padding: 0 1%;
+}
