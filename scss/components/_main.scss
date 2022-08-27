@@ -1,10 +1,9 @@
 main {
     display: flex;
-    background-color: var(--div-bg-color);
+    flex-direction: column;
     width: 70%;
     flex-wrap: wrap;
     align-items: center;
-    margin-left: 15%;
+    padding: 0 15%;
     margin-top: 1%;
-    border-radius: 15px;
 }

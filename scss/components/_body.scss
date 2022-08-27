@@ -4,6 +4,6 @@ body {
     padding: 0;
     width: 100%;
     overflow-x: hidden;
-    background-color: var(--main-bg-color);
-    color: var(--text-color);
+    background-color: $primary-bg-color;
+    color: $text-color;
 }

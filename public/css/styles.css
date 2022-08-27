@@ -53,14 +53,29 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 20pt;
+  margin: 6px;
+}
+
+p {
+  margin: 2px;
+  font-size: 13pt;
+}
+
+ul {
+  list-style-type: circle;
+  padding: 15px;
+}
+
 body {
   font-family: "Ubuntu", sans-serif;
   margin: 0;
   padding: 0;
   width: 100%;
   overflow-x: hidden;
-  background-color: var(--main-bg-color);
-  color: var(--text-color);
+  background-color: #929499;
+  color: #003C66;
 }
 
 div {
@@ -69,13 +84,12 @@ div {
 
 main {
   display: flex;
-  background-color: var(--div-bg-color);
+  flex-direction: column;
   width: 70%;
   flex-wrap: wrap;
   align-items: center;
-  margin-left: 15%;
+  padding: 0 15%;
   margin-top: 1%;
-  border-radius: 15px;
 }
 
 .section-heading {
@@ -84,12 +98,18 @@ main {
 
 section {
   display: flex;
+  width: 70%;
+  margin-bottom: 1%;
+  flex-direction: column;
+  background-color: #BEC3CF;
+  padding: 20px;
+  border-radius: 25px;
 }
 
 footer {
   display: flex;
   position: absolute;
-  background-color: var(--navbar-bg-color);
+  background-color: #BEC3CF;
   width: 100%;
   height: 7%;
   margin-top: 2%;
@@ -98,7 +118,7 @@ footer {
 }
 
 header {
-  background-color: #929499;
+  background-color: #BEC3CF;
 }
 header h1 {
   margin: 0 0 0 0;
@@ -142,21 +162,18 @@ header li.navlink-active {
   font-size: 12pt;
 }
 
-.intro {
-  flex-basis: 100%;
-  text-align: justify;
-  margin: 0 30% 0 30%;
-}
-
 .skill-lists {
   display: flex;
   flex-basis: 100%;
   margin-top: 1%;
   justify-content: center;
+  align-self: center;
   width: 70%;
 }
-.skill-lists section {
+.skill-lists div {
+  width: 50%;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 .skill-lists .skills {
   margin-left: 1%;

@@ -1,18 +1,15 @@
-.intro {
-    flex-basis: 100%;
-    text-align: justify;
-    margin: 0 30% 0 30%;
-}
-
 .skill-lists {
     display: flex;
     flex-basis: 100%;
     margin-top: 1%;
     justify-content: center;
+    align-self: center;
     width: 70%;
 
-    section {
+    div {
+        width: 50%;
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .skills {
