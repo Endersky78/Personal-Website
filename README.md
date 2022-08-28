@@ -10,5 +10,5 @@ by the end of this summer.
 - express-handlebars
 - nodemon (use --savedev)
 - sass
-- cheerio
-- node-fetch
+- puppeteer
+- markdown
