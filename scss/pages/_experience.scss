@@ -2,22 +2,31 @@
     display: flex;
     flex-wrap: wrap;
     width: 70%;
-    margin-left: 15%;
+    // margin-left: 15%;
 }
 
 .exp {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    flex-basis: 43%;
-    margin-left: 2%;
+    width: 100%;
+    // flex-basis: 43%;
+    margin: 1%;
     padding: 1%;
 
     h1 {
         font-size: 18pt;
+        margin-bottom: 1%;
     }
     
     h2 {
         font-size: 12pt;
+        margin-bottom: 2%;
     }
+
+    p {
+        width: 75%;
+    }
+
+//make them into a list
 }

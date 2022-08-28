@@ -58,8 +58,13 @@ h1 {
   margin: 6px;
 }
 
+h2 {
+  font-size: 16pt;
+  margin: 6px;
+}
+
 p {
-  margin: 2px;
+  margin: 6px;
   font-size: 13pt;
 }
 
@@ -144,22 +149,26 @@ header li.navlink-active {
   display: flex;
   flex-wrap: wrap;
   width: 70%;
-  margin-left: 15%;
 }
 
 .exp {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  flex-basis: 43%;
-  margin-left: 2%;
+  width: 100%;
+  margin: 1%;
   padding: 1%;
 }
 .exp h1 {
   font-size: 18pt;
+  margin-bottom: 1%;
 }
 .exp h2 {
   font-size: 12pt;
+  margin-bottom: 2%;
+}
+.exp p {
+  width: 75%;
 }
 
 .skill-lists {
