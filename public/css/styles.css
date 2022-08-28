@@ -146,7 +146,6 @@ header li.navlink-active {
 }
 
 #exp-div {
-  display: flex;
   flex-wrap: wrap;
   width: 70%;
 }
@@ -169,6 +168,16 @@ header li.navlink-active {
 }
 .exp p {
   width: 75%;
+}
+
+.class {
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#class-exp {
+  width: 66%;
+  margin-top: 1%;
 }
 
 .skill-lists {

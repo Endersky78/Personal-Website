@@ -1,5 +1,4 @@
 #exp-div {
-    display: flex;
     flex-wrap: wrap;
     width: 70%;
     // margin-left: 15%;
@@ -29,4 +28,14 @@
     }
 
 //make them into a list
+}
+
+.class {
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#class-exp {
+    width: 66%;
+    margin-top: 1%;
 }

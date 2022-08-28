@@ -1,20 +1,9 @@
-var cheerio = require('cheerio')
 var puppeteer = require('puppeteer')
 
-async function crawl ({ code }) {
-    
-    const response = await fetch()
-    const html = await response.text()
-    const $ = cheerio.load(html)
-    let links = $('span')
-        .map((i, span) => span.value).get()
+function toUpperCamelCase(str) {
+    return str.toLowerCase().split(' ')
+    .map((s) => s.charAt(0).toUpperCase() + s.substring(1)).join(' ')
 }
-
-function delay(time) {
-    return new Promise(function(resolve) { 
-        setTimeout(resolve, time)
-    });
- }
 
 async function scrapeData(code) {
     const browser = await puppeteer.launch({ headless: true })
@@ -24,15 +13,17 @@ async function scrapeData(code) {
     await page.type('#crit-keyword', code)
     await page.click('#search-button')
 
-    await delay(5000)
+    await page.waitForSelector(".result__headline")
 
     await page.click(".result__headline")
 
-    await delay (1000)
+    await page.waitForSelector("div.text:nth-child(2)")
 
     let data = await page.evaluate(() => {
         let classTitle = document.querySelector("div.text:nth-child(2)").textContent
-        let classDesc =  document.querySelector(".section--description > div:nth-child(2)").textContent
+            .toLowerCase().split(' ')
+            .map((s) => s.charAt(0).toUpperCase() + s.substring(1)).join(' ').replace('Ii', "II")
+        let classDesc =  document.querySelector(".section--description > div:nth-child(2)").textContent.replace('Lec/lab/rec.', '').trim()
 
         return {
             title: classTitle,
@@ -40,10 +31,7 @@ async function scrapeData(code) {
         }
     })
 
-
-    await page.screenshot({ path: '1.png', fullPage: true })
-    console.log(data)
-    await browser.close()
+    return data
 }
 
-scrapeData("CS 290")
+module.exports = { scrapeData }
