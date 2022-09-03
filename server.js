@@ -39,13 +39,11 @@ async function getClassData() {
 
 async function getBlogEntries() {
   let dirname = './blog_posts/'
-  await fs.readdir(dirname, (err, filenames) => {
+  fs.readdir(dirname, (err, filenames) => {
     if (err) {
       console.log("Error reading blog posts directory!")
       return
     }
-
-    let blogs = []
 
     filenames.forEach((filename) => {
       fs.readFile(dirname + filename, 'utf-8', (err, content) => {
@@ -56,16 +54,14 @@ async function getBlogEntries() {
 
         let parsedContent = markdown.toHTML(content)
 
-        blogs.push(parsedContent)
+        console.log("Parsed " + filename)
+
+        blogEntries.push({
+          content: parsedContent
+        })
       })
     })
-
-    blogEntries = blogs.map(x => { content: x })
-
   })
-  
-  console.log("Finished loading blog entries.")
-  console.log(blogEntries[0])
 }
 
 getClassData()
