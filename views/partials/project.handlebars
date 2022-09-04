@@ -1,5 +1,8 @@
-<main class="exp">
-        <a href="projects/{{link}}"><h1>{{title}}</h1></a>
-        <img src="{{img}}"/>
+<section class="project-section">
+        <div class="project-heading">
+                <a class="visible-anchor" href="projects/{{link}}"><h1>{{title}}</h1></a>
+                <a class="github-button" href="{{git-link}}" data-size="large" aria-label="Link to project">Link to project</a>
+        </div>
+        {{!-- <img class="project-img" src="{{img}}"/> --}}
         <p>{{desc}}</p>
-</main>
+</section>

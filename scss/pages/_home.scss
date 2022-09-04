@@ -14,13 +14,50 @@
 
     .skills {
         margin-left: 1%;
+    
+        ul {
+            margin-left: 43%;
+        }
     }
 
     .proficiencies {
         margin-right: 1%;
+    
+        ul {
+            margin-left: 19%;
+        }
+    }
+}
+
+.project-header {
+    display: block;
+    h2 {
+        float: left;
+    }
+
+    a {
+        float: left;
+    }
+
+    span {
+        float: right;
     }
 }
 
 #biography {
     padding: 0 1%;
+}
+
+.project-div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1%;
+    width: 40%;
+    margin: 2% 0;
+}
+
+.projects-div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

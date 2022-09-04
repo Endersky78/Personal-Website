@@ -78,9 +78,17 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  min-height: 100vh;
   overflow-x: hidden;
   background-color: #929499;
   color: #003C66;
+}
+
+html {
+  position: absolute;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
 }
 
 div {
@@ -95,10 +103,15 @@ main {
   align-items: center;
   padding: 0 15%;
   margin-top: 1%;
+  margin-bottom: 7%;
 }
 
 .section-heading {
   text-align: center;
+}
+
+a.visible-anchor {
+  text-decoration: underline;
 }
 
 section {
@@ -114,10 +127,11 @@ section {
 footer {
   display: flex;
   position: absolute;
+  left: 0;
+  bottom: 0;
   background-color: #BEC3CF;
   width: 100%;
-  height: 7%;
-  margin-top: 2%;
+  height: 6vh;
   padding-left: 1%;
   align-items: center;
 }
@@ -164,10 +178,13 @@ header li.navlink-active {
 }
 .exp h2 {
   font-size: 12pt;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
 }
 .exp p {
   width: 75%;
+}
+.exp ul {
+  margin-left: 2%;
 }
 
 .class {
@@ -202,21 +219,51 @@ header li.navlink-active {
 .skill-lists .skills {
   margin-left: 1%;
 }
+.skill-lists .skills ul {
+  margin-left: 43%;
+}
 .skill-lists .proficiencies {
   margin-right: 1%;
+}
+.skill-lists .proficiencies ul {
+  margin-left: 19%;
+}
+
+.project-header {
+  display: block;
+}
+.project-header h2 {
+  float: left;
+}
+.project-header a {
+  float: left;
+}
+.project-header span {
+  float: right;
 }
 
 #biography {
   padding: 0 1%;
 }
 
-#projects-main {
+.project-div {
+  display: flex;
   flex-direction: column;
+  margin: 0 1%;
+  width: 40%;
+  margin: 2% 0;
 }
 
 .projects-div {
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.project-section {
+  flex-direction: column;
+  align-self: center;
+  align-items: flex-start;
 }
 
 .image-section {
@@ -224,11 +271,15 @@ header li.navlink-active {
   justify-content: center;
 }
 
-.project-section {
-  display: flex;
-  flex-direction: column;
-  margin: 0 1%;
-  width: 40%;
+.project-heading {
+  display: block;
+  width: 100%;
+}
+.project-heading a {
+  float: left;
+}
+.project-heading span {
+  float: right;
 }
 
 .resume-div {
