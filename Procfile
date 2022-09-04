@@ -1,1 +1,0 @@
-web: node crawler.js && node server.js

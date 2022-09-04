@@ -6,7 +6,7 @@ function toUpperCamelCase(str) {
 }
 
 async function scrapeData(code) {
-    const browser = await puppeteer.launch({ headless: true })
+    const browser = await puppeteer.launch({ args: ['--no-sandbox'] })
     const page = await browser.newPage()
     
     await page.goto("https://classes.oregonstate.edu")
