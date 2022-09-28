@@ -243,7 +243,17 @@ header li.navlink-active {
 }
 
 #biography {
-  padding: 0 1%;
+  padding: 20px;
+}
+@media only screen and (max-width: 480px) {
+  #biography {
+    margin-bottom: 10%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #biography {
+    margin-bottom: 5%;
+  }
 }
 
 .project-div {

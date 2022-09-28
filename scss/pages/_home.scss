@@ -45,7 +45,15 @@
 }
 
 #biography {
-    padding: 0 1%;
+    padding: 20px;
+
+    @include devices(phone) {
+        margin-bottom: 10%;
+    }
+
+    @include devices(tablet) {
+        margin-bottom: 5%;
+    }
 }
 
 .project-div {
@@ -61,3 +69,4 @@
     justify-content: center;
     align-items: center;
 }
+

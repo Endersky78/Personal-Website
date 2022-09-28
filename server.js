@@ -13,6 +13,9 @@ app.set('view engine', 'handlebars')
 var port = process.env.PORT || 8000
 
 const classesTaken = [
+  { code: 'CS 361', date: "Fall 2022"},
+  { code: 'CS 344', date: "Fall 2022"},
+  { code: 'CS 340', date: "Fall 2022"},
   { code: 'CS 290', date: "Spring 2022" },
   { code: 'CS 271', date: "Winter 2022" },
   { code: 'CS 261', date: "Fall 2021" },
