@@ -6,10 +6,25 @@
     align-self: center;
     width: 70%;
 
+    @include devices(tablet) {
+        width: 100%;
+    }
+
+    @include devices(phone) {
+        h1 {
+            font-size: 10pt;
+            margin: 1%;
+        }
+    }
+
     div {
         width: 50%;
         flex-direction: column;
         flex-wrap: wrap;
+
+        @include devices(phone) {
+            width: 80%;
+        }
     }
 
     .skills {
@@ -17,6 +32,10 @@
     
         ul {
             margin-left: 43%;
+
+            @include devices(tablet) {
+                margin-left: 10%;
+            }
         }
     }
 
@@ -47,12 +66,12 @@
 #biography {
     padding: 20px;
 
-    @include devices(phone) {
-        margin-bottom: 10%;
-    }
-
     @include devices(tablet) {
         margin-bottom: 5%;
+    }
+
+    @include devices(phone) {
+        margin-bottom: 10%;
     }
 }
 
@@ -62,6 +81,10 @@
     margin: 0 1%;
     width: 40%;
     margin: 2% 0;
+
+    @include devices(tablet) {
+        width: 90%;
+    }
 }
 
 .projects-div {

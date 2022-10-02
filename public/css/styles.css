@@ -57,20 +57,40 @@ h1 {
   font-size: 20pt;
   margin: 6px;
 }
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 16pt;
+  }
+}
 
 h2 {
   font-size: 16pt;
   margin: 6px;
+}
+@media only screen and (max-width: 480px) {
+  h2 {
+    font-size: 12pt;
+  }
 }
 
 p {
   margin: 6px;
   font-size: 13pt;
 }
+@media only screen and (max-width: 480px) {
+  p {
+    font-size: 10pt;
+  }
+}
 
 ul {
   list-style-type: circle;
-  padding: 15px;
+  padding: 2%;
+}
+@media only screen and (max-width: 480px) {
+  ul li {
+    font-size: 8pt;
+  }
 }
 
 body {
@@ -105,6 +125,12 @@ main {
   margin-top: 1%;
   margin-bottom: 7%;
 }
+@media only screen and (max-width: 900px) {
+  main {
+    padding: 0 2%;
+    width: 96%;
+  }
+}
 
 .section-heading {
   text-align: center;
@@ -120,8 +146,13 @@ section {
   margin-bottom: 1%;
   flex-direction: column;
   background-color: #BEC3CF;
-  padding: 20px;
+  padding: 2%;
   border-radius: 25px;
+}
+@media only screen and (max-width: 900px) {
+  section {
+    width: 80vw;
+  }
 }
 
 footer {
@@ -211,16 +242,37 @@ header li.navlink-active {
   align-self: center;
   width: 70%;
 }
+@media only screen and (max-width: 900px) {
+  .skill-lists {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .skill-lists h1 {
+    font-size: 10pt;
+    margin: 1%;
+  }
+}
 .skill-lists div {
   width: 50%;
   flex-direction: column;
   flex-wrap: wrap;
+}
+@media only screen and (max-width: 480px) {
+  .skill-lists div {
+    width: 80%;
+  }
 }
 .skill-lists .skills {
   margin-left: 1%;
 }
 .skill-lists .skills ul {
   margin-left: 43%;
+}
+@media only screen and (max-width: 900px) {
+  .skill-lists .skills ul {
+    margin-left: 10%;
+  }
 }
 .skill-lists .proficiencies {
   margin-right: 1%;
@@ -245,14 +297,14 @@ header li.navlink-active {
 #biography {
   padding: 20px;
 }
-@media only screen and (max-width: 480px) {
-  #biography {
-    margin-bottom: 10%;
-  }
-}
 @media only screen and (max-width: 900px) {
   #biography {
     margin-bottom: 5%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #biography {
+    margin-bottom: 10%;
   }
 }
 
@@ -262,6 +314,11 @@ header li.navlink-active {
   margin: 0 1%;
   width: 40%;
   margin: 2% 0;
+}
+@media only screen and (max-width: 900px) {
+  .project-div {
+    width: 90%;
+  }
 }
 
 .projects-div {

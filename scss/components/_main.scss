@@ -7,4 +7,9 @@ main {
     padding: 0 15%;
     margin-top: 1%;
     margin-bottom: 7%;
+
+    @include devices(tablet) {
+        padding: 0 2%;
+        width: 96%;
+    }
 }

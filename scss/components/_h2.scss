@@ -1,4 +1,8 @@
 h2 {
     font-size: 16pt;
     margin: 6px;
+
+    @include devices(phone) {
+        font-size: 12pt;
+    }
 }
