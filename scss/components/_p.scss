@@ -1,4 +1,8 @@
 p {
     margin: 6px;
     font-size: 13pt;
+
+    @include devices(phone) {
+        font-size: 10pt;
+    }
 }

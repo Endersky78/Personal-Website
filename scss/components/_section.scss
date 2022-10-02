@@ -4,6 +4,11 @@ section {
     margin-bottom: 1%;
     flex-direction: column;
     background-color: $secondary-bg-color;
-    padding: 20px;
+    padding: 2%;
     border-radius: 25px;
+
+    @include devices(tablet) {
+        width: 80vw;
+        border-radius: 15px;
+    }
 }
