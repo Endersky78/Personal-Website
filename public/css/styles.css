@@ -152,6 +152,7 @@ section {
 @media only screen and (max-width: 900px) {
   section {
     width: 80vw;
+    border-radius: 15px;
   }
 }
 
@@ -194,6 +195,11 @@ header li.navlink-active {
   flex-wrap: wrap;
   width: 70%;
 }
+@media only screen and (max-width: 900px) {
+  #exp-div {
+    width: 90%;
+  }
+}
 
 .exp {
   display: flex;
@@ -201,11 +207,16 @@ header li.navlink-active {
   align-items: flex-start;
   width: 100%;
   margin: 1%;
-  padding: 1%;
+  padding: 3%;
 }
 .exp h1 {
   font-size: 18pt;
   margin-bottom: 1%;
+}
+@media only screen and (max-width: 480px) {
+  .exp h1 {
+    font-size: 12pt;
+  }
 }
 .exp h2 {
   font-size: 12pt;
@@ -226,6 +237,12 @@ header li.navlink-active {
 #class-exp {
   width: 66%;
   margin-top: 1%;
+}
+@media only screen and (max-width: 900px) {
+  #class-exp {
+    width: 90%;
+    margin-bottom: 10%;
+  }
 }
 
 #scraper-desc {
@@ -357,12 +374,28 @@ header li.navlink-active {
   align-items: center;
   margin: auto;
 }
+@media only screen and (max-width: 900px) {
+  .resume-div {
+    width: 90%;
+    height: 10%;
+  }
+}
 
 iframe {
   position: relative;
   width: 100%;
   height: 1100px;
   border: none;
+}
+@media only screen and (max-width: 900px) {
+  iframe {
+    height: 900px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  iframe {
+    height: 500px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

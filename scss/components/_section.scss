@@ -9,5 +9,6 @@ section {
 
     @include devices(tablet) {
         width: 80vw;
+        border-radius: 15px;
     }
 }

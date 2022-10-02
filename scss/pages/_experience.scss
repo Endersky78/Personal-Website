@@ -2,6 +2,10 @@
     flex-wrap: wrap;
     width: 70%;
     // margin-left: 15%;
+
+    @include devices(tablet) {
+        width: 90%;
+    }
 }
 
 .exp {
@@ -9,13 +13,16 @@
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    // flex-basis: 43%;
     margin: 1%;
-    padding: 1%;
+    padding: 3%;
 
     h1 {
         font-size: 18pt;
         margin-bottom: 1%;
+
+        @include devices(phone) {
+            font-size: 12pt;
+        }
     }
     
     h2 {
@@ -40,6 +47,11 @@
 #class-exp {
     width: 66%;
     margin-top: 1%;
+    
+    @include devices(tablet) {
+        width: 90%;
+        margin-bottom: 10%;
+    }
 }
 
 #scraper-desc {
