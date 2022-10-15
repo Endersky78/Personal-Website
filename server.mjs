@@ -1,14 +1,17 @@
-var path = require('path')
-var express = require('express')
-var exphbs = require('express-handlebars')
-var crawler = require('./crawler')
-var markdown = require('markdown').markdown
-var fs = require('fs')
+import herokuSSLRedirect from 'heroku-ssl-redirect'
+import path from 'path'
+import express from 'express'
+import exphbs from 'express-handlebars'
+import crawler from './crawler.js'
+import MDParser from './MDParser.js'
+import fs from 'fs'
 
-var app = express()
+const sslRedirect = herokuSSLRedirect.default
+const app = express()
 
 app.engine('handlebars', exphbs.engine({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
+app.use(sslRedirect())
 
 var port = process.env.PORT || 8000
 
@@ -40,35 +43,8 @@ async function getClassData() {
   console.log("Finished loading class data.")
 }
 
-async function getBlogEntries() {
-  let dirname = './blog_posts/'
-  fs.readdir(dirname, (err, filenames) => {
-    if (err) {
-      console.log("Error reading blog posts directory!")
-      return
-    }
-
-    filenames.forEach((filename) => {
-      fs.readFile(dirname + filename, 'utf-8', (err, content) => {
-        if (err) {
-          console.error("Error reading markdown file!")
-          return
-        }
-
-        let parsedContent = markdown.toHTML(content)
-
-        console.log("Parsed " + filename)
-
-        blogEntries.push({
-          content: parsedContent
-        })
-      })
-    })
-  })
-}
-
 getClassData()
-getBlogEntries()
+MDParser.getBlogEntries(fs, blogEntries)
 
 app.get('/', (req, res) => {
   res.status(200).render('index')
