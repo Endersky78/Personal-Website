@@ -31,6 +31,8 @@ async function scrapeData(code) {
         }
     })
 
+    console.log(`== Finished grabbing ${code}`)
+
     return data
 }
 

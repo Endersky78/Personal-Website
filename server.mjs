@@ -16,6 +16,12 @@ app.use(sslRedirect())
 var port = process.env.PORT || 8000
 
 const classesTaken = [
+  { code: 'CS 475', date: "Spring 2023"},
+  { code: 'CS 331', date: "Spring 2023"},
+  { code: 'CS 370', date: "Spring 2023"},
+  { code: 'CS 381', date: "Winter 2023"},
+  { code: 'CS 271', date: "Winter 2023"},
+  { code: 'CS 362', data: "Winter 2023"},
   { code: 'CS 361', date: "Fall 2022"},
   { code: 'CS 344', date: "Fall 2022"},
   { code: 'CS 340', date: "Fall 2022"},
