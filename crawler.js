@@ -10,12 +10,12 @@ async function LookForCode(code) {
   let retries = 0
   let data = null
 
-  while (retries <= maxRetries) {
+  while (retries <= maxRetries && data == null) {
+    retries++
     try {
       data = await scrapeData(code)
     } catch (error) {
       console.log(error)
-      retries++
       await new Promise(resolve => setTimeout(resolve, 1000)) // wait a second before retrying
     }
   }
@@ -32,7 +32,7 @@ async function scrapeData(code) {
       args: [
         '--no-sandbox',
         '--disable-setuid-sandbox'
-      ]
+      ],
       headless: true
     })
     const page = await browser.newPage()
