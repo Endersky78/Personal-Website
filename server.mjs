@@ -37,7 +37,7 @@ var blogEntries = []
 
 async function getClassData() {
   for (let i = 0; i < classesTaken.length; i++) {
-    let data = await crawler.scrapeData(classesTaken[i].code)
+    let data = await crawler.LookForCode(classesTaken[i].code)
     classData.push({
       title: data.title,
       desc: data.desc,

@@ -5,12 +5,35 @@ function toUpperCamelCase(str) {
     .map((s) => s.charAt(0).toUpperCase() + s.substring(1)).join(' ')
 }
 
+async function LookForCode(code) {
+  const maxRetries = 3
+  let retries = 0
+  let data = null
+
+  while (retries <= maxRetries) {
+    try {
+      data = await scrapeData(code)
+    } catch (error) {
+      console.log(error)
+      retries++
+      await new Promise(resolve => setTimeout(resolve, 1000)) // wait a second before retrying
+    }
+  }
+
+  if (data == null) {
+    console.error(`Failed to scrape data after {maxRetries} retries`)
+  } else {
+    return data
+  }
+}
+
 async function scrapeData(code) {
     const browser = await puppeteer.launch({
       args: [
         '--no-sandbox',
         '--disable-setuid-sandbox'
       ]
+      headless: true
     })
     const page = await browser.newPage()
     
@@ -41,4 +64,4 @@ async function scrapeData(code) {
     return data
 }
 
-module.exports = { scrapeData }
+module.exports = { LookForCode }
