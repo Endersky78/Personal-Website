@@ -37,7 +37,7 @@ async function scrapeData(code) {
     })
     const page = await browser.newPage()
     
-    await page.goto("https://classes.oregonstate.edu")
+    await page.goto("https://classes.oregonstate.edu", { waitUntil: 'load', timeout: 6000 })
     await page.type('#crit-keyword', code)
     await page.click('#search-button')
 
@@ -58,6 +58,8 @@ async function scrapeData(code) {
             desc: classDesc
         }
     })
+
+    await browser.close()
 
     console.log(`== Finished grabbing ${code}`)
 

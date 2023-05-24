@@ -9,7 +9,7 @@
     "puppeteer": "^16.2.0"
   },
   "scripts": {
-    "start": "node crawler.js && node server.mjs",
+    "start": "node --trace-warnings crawler.js && node --trace-warnings server.mjs",
     "dev": "nodemon server.mjs",
     "sass": "sass --watch scss/styles.scss public/css/styles.css"
   },
