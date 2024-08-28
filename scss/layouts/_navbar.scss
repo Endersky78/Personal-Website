@@ -20,6 +20,7 @@ header {
 
         a {
             font-size: 16pt;
+            text-decoration: none;
         }
     }
 
@@ -30,7 +31,7 @@ header {
     }
 
     li.navlink-active {
-        border-bottom: 1px solid rgb(77, 77, 77);
+        border-bottom: 2px solid $other-other-color;
     }
 
 

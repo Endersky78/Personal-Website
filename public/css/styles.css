@@ -100,8 +100,8 @@ body {
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
-  background-color: #929499;
-  color: #003C66;
+  background-color: #404E4D;
+  color: #c6ad8f;
 }
 
 html {
@@ -145,7 +145,7 @@ section {
   width: 70%;
   margin-bottom: 1%;
   flex-direction: column;
-  background-color: #BEC3CF;
+  background-color: #885053;
   padding: 2%;
   border-radius: 25px;
 }
@@ -161,7 +161,7 @@ footer {
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color: #BEC3CF;
+  background-color: #885053;
   width: 100%;
   height: 6vh;
   padding-left: 1%;
@@ -169,7 +169,7 @@ footer {
 }
 
 header {
-  background-color: #BEC3CF;
+  background-color: #885053;
 }
 header h1 {
   margin: 0 0 0 0;
@@ -188,6 +188,7 @@ header li {
 }
 header li a {
   font-size: 16pt;
+  text-decoration: none;
 }
 header nav {
   display: flex;
@@ -195,7 +196,7 @@ header nav {
   align-items: center;
 }
 header li.navlink-active {
-  border-bottom: 1px solid rgb(77, 77, 77);
+  border-bottom: 2px solid #5A2328;
 }
 header a {
   margin-left: 1%;
