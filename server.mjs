@@ -23,7 +23,7 @@ const classesTaken = [
   { code: 'CS 271', date: "Winter 2023"},
   { code: 'CS 362', date: "Winter 2023"},
   { code: 'CS 361', date: "Fall 2022"},
-  { code: 'CS 344', date: "Fall 2022"},
+  { code: 'CS 374', date: "Fall 2022"},
   { code: 'CS 340', date: "Fall 2022"},
   { code: 'CS 290', date: "Spring 2022" },
   { code: 'CS 271', date: "Winter 2022" },
