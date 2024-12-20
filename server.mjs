@@ -34,6 +34,7 @@ const classesTaken = [
 
 const classData = []
 var blogEntries = []
+var projects = {}
 
 async function getClassData() {
   for (let i = 0; i < classesTaken.length; i++) {
@@ -48,16 +49,29 @@ async function getClassData() {
 
   console.log("Finished loading class data.")
 }
-
 getClassData()
 MDParser.getBlogEntries(fs, blogEntries)
+MDParser.getProjects(fs, projects)
 
 app.get('/', (req, res) => {
   res.status(200).render('index')
 })
 
-app.get('/projects', (req, res) => {
+app.get('/projects/', (req, res) => {
   res.status(200).render('projects')
+})
+
+app.get('/projects/:id', (req, res) => {
+  const projectId = req.params.id
+  const project = projects[projectId]
+
+  // Todo: Finish these two pages
+  if (!project) {
+    res.status(404).render('404')
+    return
+  }
+
+  res.status(200).render('project', { project })
 })
 
 app.get('/experience', (req, res) => {
