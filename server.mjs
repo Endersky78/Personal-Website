@@ -71,7 +71,9 @@ app.get('/projects/:id', (req, res) => {
     return
   }
 
-  res.status(200).render('project', { project })
+  res.status(200).render('project', { 
+    content: project 
+  })
 })
 
 app.get('/experience', (req, res) => {
