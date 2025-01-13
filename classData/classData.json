@@ -1,0 +1,86 @@
+[
+  {
+    "title": "Introduction To Parallel Programming",
+    "desc": "Theoretical and practical survey of parallel programming, including a discussion of parallel architectures, parallel programming paradigms, and parallel algorithms. Programming one or more parallel computers in a higher-level parallel language.",
+    "code": "CS 475",
+    "date": "Spring 2023"
+  },
+  {
+    "title": "Introduction To Artificial Intelligence",
+    "desc": "Fundamental concepts in artificial intelligence using the unifying theme of an intelligent agent. Topics include agent architectures, search, games, logic and reasoning, and Bayesian networks.",
+    "code": "CS 331",
+    "date": "Spring 2023"
+  },
+  {
+    "title": "Introduction To Security",
+    "desc": "Introductory course on computer security with the objective to introduce concepts and principles of computer systems security. Notions of security, basic crytographic primitives and their application, basics of authentication and access control, basics of key-management, basics of malware and software security.",
+    "code": "CS 370",
+    "date": "Spring 2023"
+  },
+  {
+    "title": "Programming Language Fundamentals",
+    "desc": "An introduction to the concepts found in a variety of programming languages. Programming languages as tools for problem solving. A brief introduction to languages from a number of different paradigms.",
+    "code": "CS 381",
+    "date": "Winter 2023"
+  },
+  {
+    "title": "Computer Architecture And Assembly Language",
+    "desc": "Introduces functional organization and operation of digital computers. Coverage of assembly language; addressing, stacks, argument passing, arithmetic operations, decisions, macros, modularization, linkers, and debuggers.",
+    "code": "CS 271",
+    "date": "Winter 2023"
+  },
+  {
+    "title": "Software Engineering II",
+    "desc": "Introduction to the \"back end\" of the software engineering lifecycle implementation; verification and validation; debugging; maintenance.",
+    "code": "CS 362",
+    "date": "Winter 2023"
+  },
+  {
+    "title": "Software Engineering I",
+    "desc": "Introduction to the \"front end\" of the software engineering lifecycle; requirements analysis and specification; design techniques; project management.",
+    "code": "CS 361",
+    "date": "Fall 2022"
+  },
+  {
+    "title": "Operating Systems I",
+    "desc": "Introduction to operating systems using UNIX as the case study. Emphasizes system calls and utilities, fundamentals of processes, and interprocess communication.",
+    "code": "CS 374",
+    "date": "Fall 2022"
+  },
+  {
+    "title": "Introduction To Databases",
+    "desc": "Design and implementation of relational databases, including data modeling with ER or UML, diagrams, relational schema, SQL queries, relational algebra, user interfaces, and administration.",
+    "code": "CS 340",
+    "date": "Fall 2022"
+  },
+  {
+    "title": "Web Development",
+    "desc": "How to design and implement a multi-tier application using web technologies: Creation of extensive custom client- and server-side code, consistent with achieving a high-quality software architecture.",
+    "code": "CS 290",
+    "date": "Spring 2022"
+  },
+  {
+    "title": "Computer Architecture And Assembly Language",
+    "desc": "Introduces functional organization and operation of digital computers. Coverage of assembly language; addressing, stacks, argument passing, arithmetic operations, decisions, macros, modularization, linkers, and debuggers.",
+    "code": "CS 271",
+    "date": "Winter 2022"
+  },
+  {
+    "title": "Data Structures",
+    "desc": "Abstract data types, dynamic arrays, linked lists, trees and graphs, binary search trees, hash tables, storage management, complexity analysis of data structures.",
+    "code": "CS 261",
+    "date": "Fall 2021"
+  },
+  {
+    "title": "Introduction To Computer Science II",
+    "desc": "Provides an overview of the fundamental concepts of computer science. Studies basic data structures, computer programming techniques and application of software engineering principles. Introduces analysis of programs.",
+    "code": "CS 162",
+    "date": "Spring 2021"
+  },
+  {
+    "title": "Introduction To Computer Science I",
+    "desc": "Overview of fundamental concepts of computer science. Introduction to problem solving, software engineering, and object-oriented programming. Includes algorithm design and program development.",
+    "code": "CS 161",
+    "date": "Winter 2021"
+  }
+]

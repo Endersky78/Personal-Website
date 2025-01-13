@@ -32,7 +32,7 @@ const classesTaken = [
   { code: 'CS 161', date: "Winter 2021" },
 ]
 
-const classData = []
+var classData = []
 var blogEntries = []
 var projects = {}
 
@@ -47,9 +47,21 @@ async function getClassData() {
     })
   }
 
+  fs.writeFile('./classData/classData.json', JSON.stringify(classData, null, 2), (err) => {
+    if (err) {
+      console.error("Error writing to file:", err);
+    } else {
+      console.log("Data saved successfully!");
+    }
+  })
+
   console.log("Finished loading class data.")
 }
-getClassData()
+
+//getClassData()
+const json_data = fs.readFileSync("./classData/classData.json", "utf8")
+classData = JSON.parse(json_data)
+
 MDParser.getBlogEntries(fs, blogEntries)
 MDParser.getProjects(fs, projects)
 
