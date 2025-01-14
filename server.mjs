@@ -1,21 +1,28 @@
-import herokuSSLRedirect from 'heroku-ssl-redirect'
-import path from 'path'
 import express from 'express'
 import exphbs from 'express-handlebars'
 import crawler from './crawler.js'
 import MDParser from './MDParser.js'
 import fs from 'fs'
 
-const sslRedirect = herokuSSLRedirect.default
 const app = express()
 
 app.engine('handlebars', exphbs.engine({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
-app.use(sslRedirect())
 
 var port = process.env.PORT || 8000
 
 const classesTaken = [
+  { code: 'CS 434', date: "Spring 2025"},
+  { code: 'CS 478', date: "Winter 2025"},
+  { code: 'MTH 440', date: "Fall 2024"},
+  { code: 'MTH 451', date: "Fall 2024"},
+  { code: 'CS 373', date: "Fall 2024"},
+  { code: 'CS 473', date: "Spring 2024"},
+  { code: 'CS 457', date: "Winter 2024"},
+  { code: 'CS 427', date: "Winter 2024"},
+  { code: 'MTH 343', date: "Fall 2023"},
+  { code: 'CS 450', date: "Fall 2023"},
+  { code: 'CS 444', date: "Fall 2023"},
   { code: 'CS 475', date: "Spring 2023"},
   { code: 'CS 331', date: "Spring 2023"},
   { code: 'CS 370', date: "Spring 2023"},

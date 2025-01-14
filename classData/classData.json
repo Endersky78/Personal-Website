@@ -1,5 +1,71 @@
 [
   {
+    "title": "Machine Learning And Data Mining",
+    "desc": "Introduces machine learning and data mining algorithms and tools that are widely employed in industrial and research settings. Explores supervised learning for prediction problems, both discrete and real-valued; unsupervised learning for clustering data and discovering patterns in data sets; and reinforcement learning for controlling complex processes based on positive and negative feedback. Applies machine learning and data mining techniques to real problems with programming assignments and written homework assignments.",
+    "code": "CS 434",
+    "date": "Spring 2025"
+  },
+  {
+    "title": "Network Security",
+    "desc": "Basic concepts and techniques in network security, risks and vulnerabilities, applied cryptography and various network security protocols. Coverage of high-level concepts such as authentication, confidentiality, integrity, and availability applied to networking systems. Fundamental techniques including authentication protocols, group key establishment and management, trusted intermediaries, public key infrastructures, SSL/TLS, IPSec, firewalls and intrusion detection CROSSLISTED as CS 478/ECE 478.",
+    "code": "CS 478",
+    "date": "Winter 2025"
+  },
+  {
+    "title": "Computational Number Theory",
+    "desc": "Development of the number theory used in some basic tests of primality and methods of factoring integers. Applications to cryptology.",
+    "code": "MTH 440",
+    "date": "Fall 2024"
+  },
+  {
+    "title": "Numerical Linear Algebra",
+    "desc": "Computation of solutions of linear systems using direct and iterative methods; least-squares solution of overdetermined systems; computation of eigenvalues and eigenvectors.",
+    "code": "MTH 451",
+    "date": "Fall 2024"
+  },
+  {
+    "title": "Defense Against The Dark Arts",
+    "desc": "Introduction to the current state of the art in anti-malware, computer forensics, and networking, messaging, and web security. Broad introduction to the field of computer security.",
+    "code": "CS 373",
+    "date": "Fall 2024"
+  },
+  {
+    "title": "Introduction To Digital Forensics",
+    "desc": "Introduces concepts related to digital forensics, its role and importance, and tools and techniques for collecting and curating digital evidence. Discusses the role of evidence in the justice system and related legal aspects pertaining to digital forensics. Introduces tools and techniques for digital forensics.",
+    "code": "CS 473",
+    "date": "Spring 2024"
+  },
+  {
+    "title": "Computer Graphics Shaders",
+    "desc": "Emphasizes theoretical and practical treatment of computer graphics shaders, including both RenderMan and GPU shaders. Explores programming in both RenderMan and OpenGL shading languages.",
+    "code": "CS 457",
+    "date": "Winter 2024"
+  },
+  {
+    "title": "Cryptography",
+    "desc": "Introduction to the theory and practice of modern cryptography. Fundamental primitives including pseudorandom generators, block ciphers, hash functions. Symmetric-key cryptography for privacy and authenticity. Public-key cryptography based on number-theoretic problems.",
+    "code": "CS 427",
+    "date": "Winter 2024"
+  },
+  {
+    "title": "Introduction To Modern Algebra",
+    "desc": "Introduction to algebraic abstraction, with an emphasis on structures and logical communication by way of proofs. Material includes an introduction to groups, rings and fields.   Emphasis is on symmetry groups, the integers as a ring, and polynomial rings; selected applications. Generalizing from examples to mathematical statements, reading proofs,  and both creating and editing proofs.",
+    "code": "MTH 343",
+    "date": "Fall 2023"
+  },
+  {
+    "title": "Introduction To Computer Graphics",
+    "desc": "Theoretical and practical treatment of 3D computer graphics using OpenGL: geometric modeling, transformations, viewing, lighting, texture mapping, shading, rendering, and animation.",
+    "code": "CS 450",
+    "date": "Fall 2023"
+  },
+  {
+    "title": "Operating Systems II",
+    "desc": "Explores principles of computer operating systems: concurrent processes, memory management, job scheduling, multiprocessing, file systems, performance evaluation, and networking.",
+    "code": "CS 444",
+    "date": "Fall 2023"
+  },
+  {
     "title": "Introduction To Parallel Programming",
     "desc": "Theoretical and practical survey of parallel programming, including a discussion of parallel architectures, parallel programming paradigms, and parallel algorithms. Programming one or more parallel computers in a higher-level parallel language.",
     "code": "CS 475",
