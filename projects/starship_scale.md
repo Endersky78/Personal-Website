@@ -8,7 +8,7 @@ The game jam's theme was "Built to Scale." Our team interpreted scaling in a spa
 
 The game progresses through waves of enemies, with the goal being to survive for ten minutes. As players advance, the enemies evolve to reflect the increasing scale of the player's power, ranging from small fighter ships to planet-destroying behemoths.
 
-insert image here.
+<img src="/images/starscale.png" width=25% height=25%>
 
 ## Combat and Upgrades
 
@@ -16,11 +16,13 @@ Weapons are automatically discharged, allowing players to focus on movement and 
 
 Players can purchase upgrades at any time. These upgrades offer a variety of enhancements, including increased movement speed, maximum health, and additional weaponry. We implemented three types of weapons: the rubble laser, the missile, and the seeking missile. Each weapon adds layers of complexity to the gameplay.
 
+<img src="/images/starscale-gameplay.png" width=35% height=35%>
+
 ## Enemy Waves
 
 To design enemy waves, I aimed for precise control over the difficulty curve and complexity. I implemented a system utilizing Unity's "Curves" editor, which allows me to define pacing through a graph where time is the X-axis and spawn rate is the Y-axis. This approach enabled me to fine-tune the game's progression and ensure consistent pacing.
 
-insert image here.
+<img src="/images/starscale-upgrade.png" width=35% height=35%>
 
 ## Takeaways and Improvements
 

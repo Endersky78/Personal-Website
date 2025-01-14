@@ -8,7 +8,7 @@ The application generates blocks by creating textured cubes. These textures are 
 
 Terrain generation utilizes Perlin noise to determine surface levels, filling all blocks below the surface. While the current implementation supports only dirt blocks, the system is extensible to accommodate multiple block types in the future.
 
-![image](https://github.com/user-attachments/assets/bbc0caa6-c17b-47a8-9502-1d337a6a1203)
+<img src="https://github.com/user-attachments/assets/bbc0caa6-c17b-47a8-9502-1d337a6a1203"/>
 
 
 ## Implementation Details
@@ -19,8 +19,6 @@ This project was developed using an OpenGL template provided by Professor Mike B
 - [Chunk](https://github.com/jackhart591/Minecraft-OpenGL/blob/main/Chunk.cpp)
 - [World](https://github.com/jackhart591/Minecraft-OpenGL/blob/main/World.cpp)
 - [Sample.cpp](https://github.com/jackhart591/Minecraft-OpenGL/blob/main/sample.cpp)
-
-### Key Components
 
 #### **Sample.cpp**
 

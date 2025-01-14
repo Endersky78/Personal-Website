@@ -1,7 +1,9 @@
 <section class="project-section">
         <div class="project-heading">
                 <a class="visible-anchor" href="projects/{{link}}.md"><h1>{{title}}</h1></a>
+                {{#if git-link}}
                 <a class="github-button" href="{{git-link}}" data-size="large" aria-label="Link to project">Link to project</a>
+                {{/if}}
         </div>
         {{!-- <img class="project-img" src="{{img}}"/> --}}
         <p>{{desc}}</p>

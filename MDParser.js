@@ -1,4 +1,5 @@
-var markdown = require('markdown').markdown
+const markdownit = require('markdown-it')
+const md = markdownit({ html: true,})
 
 async function getBlogEntries(fs, blogEntries) {
     let dirname = './blog_posts/'
@@ -24,7 +25,7 @@ async function readEntries(fs, dirname, entries, keys=false) {
           return
         }
 
-        let parsedContent = markdown.toHTML(content)
+        let parsedContent = md.render(content)
         console.log("Parsed " + filename)
         
         if (!keys) {
